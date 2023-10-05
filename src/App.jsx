@@ -1,10 +1,11 @@
+import IntroSection from "./components/IntroSection.jsx";
 
 
 function App() {
 
   return (
     <>
-      <h1>Travelian</h1>
+      <IntroSection />
     </>
   )
 }
