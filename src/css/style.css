@@ -332,12 +332,16 @@ html, body {
 .intro {
   background-image: url("../images/intro_bg.jpg");
 }
+
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   max-width: 97.25rem;
   width: 100%;
   margin: auto;
+  padding-top: 1.625rem;
+  padding-bottom: 1.625rem;
 }
 
 .main-menu__item--active, .main-menu__item:hover {

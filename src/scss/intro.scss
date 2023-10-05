@@ -15,20 +15,22 @@
 
 .intro {
     background-image: url('#{$imgs-path}/intro_bg.jpg');
-    &__header {}
 }
 
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     max-width: toRem(1556px);
     width: 100%;
     margin: auto;
+    padding-top: toRem(26px);
+    padding-bottom: toRem(26px);
 }
 
 .main-menu {
     &__item {
-        @extend %menu-item
+        @extend %menu-item;
     }
 
     &__item--active, &__item:hover {
@@ -51,6 +53,7 @@
     &__item {
         @extend %menu-item;
     }
+
     &__item--btn {
         border-radius: toRem(12px);
         background-color: $primary-color;
