@@ -15,6 +15,10 @@ function IntroSection() {
                     <a href="" className="auth-menu__item auth-menu__item--btn">Sign up</a>
                 </nav>
             </header>
+            <div className="lead">
+                <h1 className="lead__hdl">Start your unforgettable<br/> journey with us.</h1>
+                <p className="lead__text">The best travel for your journey begins now</p>
+            </div>
         </section>
     );
 }

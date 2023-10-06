@@ -61,3 +61,24 @@
 
     }
 }
+
+.lead {
+    color: $primary-font-color;
+    max-width: toRem(1556px);
+    width: 100%;
+    margin: auto;
+    &__hdl {
+        font-family: Playfair Display, serif;
+        font-size: toRem(84px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0;
+    }
+    &__text {
+        font-family: Rubik, sans-serif;
+        font-size: toRem(24px);
+        font-weight: 400;
+        display: inline-block;
+    }
+}
