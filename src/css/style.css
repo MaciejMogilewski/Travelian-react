@@ -333,6 +333,15 @@ html, body {
 
 .intro {
   background-image: url("../images/intro_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 6.25rem;
+  box-sizing: border-box;
 }
 
 .header {
@@ -341,7 +350,6 @@ html, body {
   align-items: center;
   max-width: 97.25rem;
   width: 100%;
-  margin: auto;
   padding-top: 1.625rem;
   padding-bottom: 1.625rem;
 }
@@ -370,12 +378,10 @@ html, body {
   color: #FFF;
   max-width: 97.25rem;
   width: 100%;
-  margin: auto;
 }
 .lead__hdl {
-  font-family: Playfair Display, serif;
+  font-family: "Playfair Display", serif;
   font-size: 5.25rem;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
   margin: 0;
@@ -385,6 +391,93 @@ html, body {
   font-size: 1.5rem;
   font-weight: 400;
   display: inline-block;
+  margin: 1rem 0;
+}
+
+.search {
+  width: 100%;
+  max-width: 97.25rem;
+  position: relative;
+}
+.search::before {
+  content: "";
+  background-color: #FFF;
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  left: -100%;
+}
+.search__wrapper {
+  background: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 80.6875rem;
+  border-radius: 0 1.25rem 1.25rem 0;
+}
+.search__group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 14.0625rem;
+  padding-top: 4.25rem;
+  padding-bottom: 4.25rem;
+}
+.search__lbl {
+  font-family: Rubik, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.187;
+  text-transform: uppercase;
+  color: #767E86;
+  margin-bottom: 0.75rem;
+}
+.search__input {
+  width: 100%;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  font-size: 1.25rem;
+  font-family: Playfair Display, sans-serif;
+  font-weight: 400;
+  color: #172432;
+  border-bottom: 0.0625rem solid black;
+}
+.search__input--select {
+  padding-bottom: 0.3125rem;
+}
+.search__input--check {
+  padding-bottom: 0.4375rem;
+}
+.search__btn {
+  font-family: Playfair Display, sans-serif;
+  font-weight: 400;
+  font-size: 2.25rem;
+  line-height: 1.33;
+  color: #FFF;
+  border: 0;
+  background-color: #FF7757;
+  padding: 3.75rem 4.3125rem 3.875rem 1.25rem;
+  text-align: left;
+  border-radius: 0 1.25rem 1.25rem 0;
+  cursor: pointer;
+  position: relative;
+  margin-right: -0.0625rem;
+}
+.search__btn::after {
+  content: "";
+  background-image: url("../images/Arrow1.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 1.375rem;
+  height: 1rem;
+  position: absolute;
+  right: 1.125rem;
+  transform: translateY(-8px);
 }
 
 /*# sourceMappingURL=style.css.map */

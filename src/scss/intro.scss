@@ -15,6 +15,15 @@
 
 .intro {
     background-image: url('#{$imgs-path}/intro_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: toRem(100px);
+    box-sizing: border-box;
 }
 
 .header {
@@ -23,7 +32,6 @@
     align-items: center;
     max-width: toRem(1556px);
     width: 100%;
-    margin: auto;
     padding-top: toRem(26px);
     padding-bottom: toRem(26px);
 }
@@ -66,11 +74,9 @@
     color: $primary-font-color;
     max-width: toRem(1556px);
     width: 100%;
-    margin: auto;
     &__hdl {
-        font-family: Playfair Display, serif;
+        font-family: "Playfair Display", serif;
         font-size: toRem(84px);
-        font-style: normal;
         font-weight: 400;
         line-height: normal;
         margin: 0;
@@ -80,5 +86,94 @@
         font-size: toRem(24px);
         font-weight: 400;
         display: inline-block;
+        margin: toRem(16px) 0;
+    }
+}
+
+.search {
+    width: 100%;
+    max-width: toRem(1556px);
+    position: relative;
+    &::before {
+        content: '';
+        background-color: $secondary-color;
+        position: absolute;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        left: -100%;
+    }
+    &__wrapper {
+        background: $secondary-color;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: toRem(1291px);
+        border-radius: 0 toRem(20px) toRem(20px) 0;
+    }
+    &__group {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: toRem(225px);
+        padding-top: toRem(68px);
+        padding-bottom: toRem(68px);
+    }
+    &__lbl {
+        font-family: Rubik, sans-serif;
+        font-size: toRem(16px);
+        font-weight: 400;
+        line-height: 1.187;
+        text-transform: uppercase;
+        color: $secondary-font-color;
+        margin-bottom: toRem(12px);
+    }
+    &__input {
+        width: 100%;
+        border-top-width: 0;
+        border-left-width: 0;
+        border-right-width: 0;
+        padding-top: toRem(10px);
+        padding-bottom: toRem(10px);
+        font-size: toRem(20px);
+        font-family: Playfair Display, sans-serif;
+        font-weight: 400;
+        color: $input-font-color;
+        border-bottom: toRem(1px) solid black;
+    }
+    &__input--select {
+        padding-bottom: toRem(5px);
+    }
+    &__input--check {
+        padding-bottom: toRem(7px);
+    }
+
+    &__btn {
+        font-family: Playfair Display, sans-serif;
+        font-weight: 400;
+        font-size: toRem(36px);
+        line-height: 1.33;
+        color: $primary-font-color;
+        border: 0;
+        background-color: $primary-color;
+        padding: toRem(60px) toRem(69px) toRem(62px) toRem(20px);
+        text-align: left;
+        border-radius: 0 toRem(20px) toRem(20px) 0;
+        cursor: pointer;
+        position: relative;
+        margin-right: toRem(-1px);
+        &::after {
+            content: '';
+            background-image: url('#{$imgs-path}/Arrow1.svg');
+            background-repeat: no-repeat;
+            display: inline-block;
+            width: toRem(22px);
+            height: toRem(16px);
+            position: absolute;
+            right: toRem(18px);
+            //top: calc(50% - 8px);
+            transform: translateY(-8px);
+        }
     }
 }
