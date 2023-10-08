@@ -344,7 +344,7 @@ html, body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 6.25rem;
+  padding-bottom: 16.875rem;
   box-sizing: border-box;
 }
 
@@ -490,6 +490,86 @@ html, body {
 
 html, body {
   font-size: 16px;
+}
+
+.destinations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8.75rem;
+  padding-bottom: 8.75rem;
+}
+
+.content {
+  max-width: 97.25rem;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.leadDes__hdl {
+  color: #172432;
+  font-family: Playfair Display, serif;
+  font-size: 64px;
+  font-weight: 400;
+  position: relative;
+  margin: 0;
+}
+.leadDes__hdl::after {
+  content: "";
+  position: absolute;
+  width: 22.8125rem;
+  height: 0.1875rem;
+  background-color: #FF7757;
+  display: block;
+  bottom: -1.25rem;
+}
+.leadDes__text {
+  margin-top: 3rem;
+  margin-bottom: 0;
+  color: #767E86;
+  font-family: Rubik, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.btnsDes {
+  margin-left: 2rem;
+}
+.btnsDes__btnLeft {
+  width: 3.75rem;
+  height: 4.125rem;
+  border-radius: 0.75rem;
+  background-color: #172432;
+  border: none;
+  background-image: url("../images/chevron.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.btnsDes__btnRight {
+  width: 3.75rem;
+  height: 4.125rem;
+  border-radius: 0.75rem;
+  background-color: #FF7757;
+  border: none;
+  margin-left: 2.5rem;
+  background-image: url("../images/chevron.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  transform: rotate(180deg);
+}
+
+.imgsDes {
+  margin-top: 6.25rem;
+  max-width: 97.25rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.imgsDes__img {
+  width: 31.0625rem;
+  height: 41.3125rem;
 }
 
 /*# sourceMappingURL=style.css.map */

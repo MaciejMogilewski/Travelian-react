@@ -1,20 +1,89 @@
 @import "variables";
 @import "helpers";
 
-.destinations {}
+.destinations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: toRem(140px);
+    padding-bottom: toRem(140px);
+}
 
-.content {}
+.content {
+    max-width: toRem(1556px);
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
 
 .leadDes {
-    &__hdl {}
-    &__test {}
+
+    &__hdl {
+        color: $input-font-color;
+        font-family: Playfair Display, serif;
+        font-size: 64px;
+        font-weight: 400;
+        position: relative;
+        margin: 0;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: toRem(365px);
+            height: toRem(3px);
+            background-color: $primary-color;
+            display: block;
+            bottom: toRem(-20px);
+        }
+    }
+
+    &__text {
+        margin-top: toRem(48px);
+        margin-bottom: 0;
+        color: $secondary-font-color;
+        font-family: Rubik, sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+    }
 }
 
 .btnsDes {
-    &__btnLeft {}
-    &__btnRight {}
+    margin-left: toRem(32px);
+
+    &__btnLeft {
+        width: toRem(60px);
+        height: toRem(66px);
+        border-radius: toRem(12px);
+        background-color: $btn-left;
+        border: none;
+        background-image: url('#{$imgs-path}/chevron.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    &__btnRight {
+        width: toRem(60px);
+        height: toRem(66px);
+        border-radius: toRem(12px);
+        background-color: $btn-right;
+        border: none;
+        margin-left: toRem(40px);
+        background-image: url('#{$imgs-path}/chevron.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        transform: rotate(180deg);
+    }
 }
 
 .imgsDes {
-    &__img {}
+    margin-top: toRem(100px);
+    max-width: toRem(1556px);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    &__img {
+        width: toRem(497px);
+        height: toRem(661px);
+    }
 }
