@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -7,12 +8,22 @@
  */
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -344,8 +355,8 @@ html, body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 16.875rem;
   box-sizing: border-box;
+  padding-bottom: 6.25rem;
 }
 
 .header {
@@ -570,6 +581,164 @@ html, body {
 .imgsDes__img {
   width: 31.0625rem;
   height: 41.3125rem;
+}
+
+html, body {
+  font-size: 16px;
+}
+
+html, body {
+  font-size: 16px;
+}
+
+.specialOffer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8.75rem;
+  padding-bottom: 8.75rem;
+}
+
+.titleSpe {
+  max-width: 97.25rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 6.25rem;
+}
+
+.btnsSpe__btnSpeLeft {
+  width: 3.75rem;
+  height: 4.125rem;
+  border-radius: 0.75rem;
+  background-color: #172432;
+  border: none;
+  background-image: url("../images/chevron.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.btnsSpe__btnSpeRight {
+  width: 3.75rem;
+  height: 4.125rem;
+  border-radius: 0.75rem;
+  background-color: #FF7757;
+  border: none;
+  margin-left: 2.5rem;
+  background-image: url("../images/chevron.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  transform: rotate(180deg);
+}
+
+.leadSpe {
+  text-align: right;
+}
+.leadSpe__hdl {
+  color: #172432;
+  font-family: Playfair Display, serif;
+  font-size: 64px;
+  font-weight: 400;
+  margin: 0;
+  position: relative;
+}
+.leadSpe__hdl::after {
+  content: "";
+  position: absolute;
+  width: 15.0625rem;
+  height: 0.1875rem;
+  background-color: #FF7757;
+  display: block;
+  bottom: -1.25rem;
+  right: 0;
+}
+.leadSpe__text {
+  margin-top: 3.25rem;
+  margin-bottom: 0;
+  color: #767E86;
+  font-family: Rubik, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.contentSpe {
+  display: flex;
+  max-width: 97.25rem;
+  width: 100%;
+}
+
+.blockSpe {
+  margin-right: 2rem;
+}
+.blockSpe:last-child {
+  margin-right: 0;
+}
+.blockSpe__imgSpe {
+  width: 100%;
+  margin: 0;
+}
+
+.textBlockSpe {
+  padding: 2.5rem 1.5rem;
+  background-color: #FFF8F1;
+}
+.textBlockSpe__hdlSpe {
+  color: #767E86;
+  font-family: Mulish, sans-serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+.textBlockSpe__ranking {
+  background-image: url("../images/star.svg");
+  height: 1.5rem;
+  width: 7.5rem;
+  background-repeat: repeat;
+}
+.textBlockSpe__descriptionSpe {
+  color: #172432;
+  font-family: Rubik, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: normal;
+  margin: 1.5rem 0;
+}
+
+.detailsSpe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.detailsSpe__priceSpe {
+  color: #767E86;
+  font-family: Rubik, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+}
+.detailsSpe__priceSpe::after {
+  content: "€500";
+  position: absolute;
+  color: #FF7757;
+  font-family: Rubik, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  top: 50%;
+  transform: translateY(-50%);
+  left: calc(100% + 8px);
+}
+.detailsSpe__btnDetailsSpe {
+  border-radius: 12px;
+  background: #FF7757;
+  padding: 1.25rem 2.5rem;
+  text-transform: uppercase;
+  color: #FFF;
+  text-decoration: none;
+  font-family: Rubik, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */

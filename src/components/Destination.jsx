@@ -12,9 +12,9 @@ function Destination() {
                 </div>
             </div>
             <div className="destinations__imgsDes imgsDes">
-                <img className="imgsDes__img" src="../../src/images/Col-block.jpg" alt=""/>
-                <img className="imgsDes__img" src="../../src/images/Col-block2.jpg" alt=""/>
-                <img className="imgsDes__img" src="../../src/images/Col-block3.jpg" alt=""/>
+                <img className="imgsDes__img" src="../../src/images/Col-block.jpg" alt="image1"/>
+                <img className="imgsDes__img" src="../../src/images/Col-block2.jpg" alt="image2"/>
+                <img className="imgsDes__img" src="../../src/images/Col-block3.jpg" alt="image3"/>
             </div>
         </section>
     );

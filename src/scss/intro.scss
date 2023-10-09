@@ -22,8 +22,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: toRem(270px);
     box-sizing: border-box;
+    padding-bottom: toRem(100px);
 }
 
 .header {
@@ -74,6 +74,7 @@
     color: $primary-font-color;
     max-width: toRem(1556px);
     width: 100%;
+    //margin-bottom: toRem(170px);
     &__hdl {
         font-family: "Playfair Display", serif;
         font-size: toRem(84px);

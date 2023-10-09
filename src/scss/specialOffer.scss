@@ -1,31 +1,168 @@
 @import "variables";
 @import "helpers";
 
-.specialOffer {}
+.specialOffer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: toRem(140px);
+    padding-bottom: toRem(140px);
+}
 
-.titleSpe {}
+.titleSpe {
+    max-width: toRem(1556px);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: toRem(100px);
 
-.btns {
-    &__btnLeft {}
-    &__btnRight {}
+}
+
+.btnsSpe {
+    &__btnSpeLeft {
+        width: toRem(60px);
+        height: toRem(66px);
+        border-radius: toRem(12px);
+        background-color: $btn-left;
+        border: none;
+        background-image: url('#{$imgs-path}/chevron.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    &__btnSpeRight {
+        width: toRem(60px);
+        height: toRem(66px);
+        border-radius: toRem(12px);
+        background-color: $btn-right;
+        border: none;
+        margin-left: toRem(40px);
+        background-image: url('#{$imgs-path}/chevron.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        transform: rotate(180deg);
+    }
 }
 
 .leadSpe {
-    &__hdl {}
-    &__text {}
+    text-align: right;
+
+    &__hdl {
+        color: $input-font-color;
+        font-family: Playfair Display, serif;
+        font-size: 64px;
+        font-weight: 400;
+        margin: 0;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: toRem(241px);
+            height: toRem(3px);
+            background-color: $primary-color;
+            display: block;
+            bottom: toRem(-20px);
+            right: 0;
+        }
+    }
+
+    &__text {
+        margin-top: toRem(52px);
+        margin-bottom: 0;
+        color: $secondary-font-color;
+        font-family: Rubik, sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+    }
 }
 
-.contentSpe {}
+.contentSpe {
+    display: flex;
+    max-width: toRem(1556px);
+    width: 100%;
+}
 
 .blockSpe {
-    &__imgSpe {}
-    &__textBlockSpe {}
-    &__hdlSpe {}
-    &__ranking {}
-    &__descriptionSpe {}
+    margin-right: toRem(32px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &__imgSpe {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.textBlockSpe {
+    padding: toRem(40px) toRem(24px);
+    background-color: $third-color;
+
+    &__hdlSpe {
+        color: $secondary-font-color;
+        font-family: Mulish, sans-serif;
+        font-size: toRem(28px);
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: toRem(8px);
+    }
+
+    &__ranking {
+        background-image: url('#{$imgs-path}/star.svg');
+        height: toRem(24px);
+        width: toRem(120px);
+        background-repeat: repeat;
+    }
+
+    &__descriptionSpe {
+        color: $input-font-color;
+        font-family: Rubik, sans-serif;
+        font-size: toRem(18px);
+        font-weight: 400;
+        line-height: normal;
+        margin: toRem(24px) 0;
+    }
 }
 
 .detailsSpe {
-    &__priceSpe {}
-    &__btnDetailsSpe {}
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__priceSpe {
+        color: $secondary-font-color;
+        font-family: Rubik, sans-serif;
+        font-size: toRem(20px);
+        font-weight: 400;
+        line-height: normal;
+        position: relative;
+
+        &::after {
+            content: '€500';
+            position: absolute;
+            color: #FF7757;
+            font-family: Rubik, sans-serif;
+            font-size: toRem(40px);
+            font-weight: 400;
+            top: 50%;
+            transform: translateY(-50%);
+            left: calc(100% + 8px);
+
+        }
+    }
+
+    &__btnDetailsSpe {
+        border-radius: 12px;
+        background: $primary-color;
+        padding: toRem(20px) toRem(40px);
+        text-transform: uppercase;
+        color: $primary-font-color;
+        text-decoration: none;
+        font-family: Rubik, sans-serif;
+        font-size: toRem(20px);
+        font-weight: 400;
+    }
 }
