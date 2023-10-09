@@ -534,10 +534,10 @@ html, body {
   font-weight: 400;
 }
 
-.btnsDes {
+.btns {
   margin-left: 2rem;
 }
-.btnsDes__btnLeft {
+.btns__btnLeft {
   width: 3.75rem;
   height: 4.125rem;
   border-radius: 0.75rem;
@@ -547,7 +547,7 @@ html, body {
   background-repeat: no-repeat;
   background-position: center center;
 }
-.btnsDes__btnRight {
+.btns__btnRight {
   width: 3.75rem;
   height: 4.125rem;
   border-radius: 0.75rem;

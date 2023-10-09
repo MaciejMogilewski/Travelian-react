@@ -1,0 +1,31 @@
+@import "variables";
+@import "helpers";
+
+.specialOffer {}
+
+.titleSpe {}
+
+.btns {
+    &__btnLeft {}
+    &__btnRight {}
+}
+
+.leadSpe {
+    &__hdl {}
+    &__text {}
+}
+
+.contentSpe {}
+
+.blockSpe {
+    &__imgSpe {}
+    &__textBlockSpe {}
+    &__hdlSpe {}
+    &__ranking {}
+    &__descriptionSpe {}
+}
+
+.detailsSpe {
+    &__priceSpe {}
+    &__btnDetailsSpe {}
+}

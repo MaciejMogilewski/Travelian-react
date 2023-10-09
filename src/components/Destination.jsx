@@ -6,9 +6,9 @@ function Destination() {
                     <h2 className="leadDes__hdl">Popular Destinations</h2>
                     <p className="leadDes__text">Most popular destinations around the world, from historical places to natural wonders.</p>
                 </div>
-                <div className="content__btnDes btnsDes">
-                    <button className="btnsDes__btnLeft"></button>
-                    <button className="btnsDes__btnRight"></button>
+                <div className="content__btns btns">
+                    <button className="btns__btnLeft"></button>
+                    <button className="btns__btnRight"></button>
                 </div>
             </div>
             <div className="destinations__imgsDes imgsDes">
