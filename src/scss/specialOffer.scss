@@ -29,6 +29,7 @@
         background-image: url('#{$imgs-path}/chevron.svg');
         background-repeat: no-repeat;
         background-position: center center;
+        cursor: pointer;
     }
 
     &__btnSpeRight {
@@ -42,6 +43,7 @@
         background-repeat: no-repeat;
         background-position: center center;
         transform: rotate(180deg);
+        cursor: pointer;
     }
 }
 

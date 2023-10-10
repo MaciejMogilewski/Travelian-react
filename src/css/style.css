@@ -24,6 +24,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -557,6 +563,7 @@ html, body {
   background-image: url("../images/chevron.svg");
   background-repeat: no-repeat;
   background-position: center center;
+  cursor: pointer;
 }
 .btns__btnRight {
   width: 3.75rem;
@@ -569,6 +576,7 @@ html, body {
   background-repeat: no-repeat;
   background-position: center center;
   transform: rotate(180deg);
+  cursor: pointer;
 }
 
 .imgsDes {
@@ -617,6 +625,7 @@ html, body {
   background-image: url("../images/chevron.svg");
   background-repeat: no-repeat;
   background-position: center center;
+  cursor: pointer;
 }
 .btnsSpe__btnSpeRight {
   width: 3.75rem;
@@ -629,6 +638,7 @@ html, body {
   background-repeat: no-repeat;
   background-position: center center;
   transform: rotate(180deg);
+  cursor: pointer;
 }
 
 .leadSpe {
@@ -739,6 +749,104 @@ html, body {
   font-family: Rubik, sans-serif;
   font-size: 1.25rem;
   font-weight: 400;
+}
+
+html, body {
+  font-size: 16px;
+}
+
+html, body {
+  font-size: 16px;
+}
+
+.ourBlog {
+  padding-top: 8.75rem;
+  padding-bottom: 8.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titleBlog {
+  max-width: 97.25rem;
+  width: 100%;
+  margin-bottom: 6.25rem;
+}
+
+.leadBlog__hdlBlog {
+  color: #172432;
+  font-family: Playfair Display, serif;
+  font-size: 4rem;
+  font-weight: 400;
+  position: relative;
+  margin: 0;
+}
+.leadBlog__hdlBlog::after {
+  content: "";
+  position: absolute;
+  width: 9.375rem;
+  height: 0.1875rem;
+  background-color: #FF7757;
+  display: block;
+  bottom: -1.25rem;
+}
+.leadBlog__textBlog {
+  margin-top: 3rem;
+  margin-bottom: 0;
+  color: #767E86;
+  font-family: Rubik, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.contentBlog {
+  display: flex;
+  align-items: center;
+  max-width: 97.25rem;
+  width: 100%;
+}
+.contentBlog__imgBlog {
+  margin-right: 2rem;
+}
+
+.descriptionBlog__hdlBlog {
+  color: #172432;
+  font-family: Playfair Display, serif;
+  font-size: 3.375rem;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+.descriptionBlog__txtBlog {
+  color: #172432;
+  font-family: Rubik, sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.25rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.descriptionBlog__linkBlog {
+  color: #FF7757;
+  font-family: Rubik, sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.25rem;
+  text-decoration: none;
+  position: relative;
+}
+.descriptionBlog__linkBlog::after {
+  content: "";
+  position: absolute;
+  background-image: url("../images/Arrow2.svg");
+  display: inline-block;
+  width: 1.75rem;
+  height: 0.9375rem;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 1.25rem;
 }
 
 /*# sourceMappingURL=style.css.map */
