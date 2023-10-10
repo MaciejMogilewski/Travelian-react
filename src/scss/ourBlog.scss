@@ -1,0 +1,21 @@
+@import "helpers";
+@import "variables";
+
+.ourBlog {}
+
+.titleBlog {}
+
+.leadBlog {
+    &__hdlBlog {}
+    &__textBlog {}
+}
+
+.contentBlog {
+    &__imgBlog {}
+}
+
+.descriptionBlog {
+    &__hdlBlog {}
+    &__textBlog {}
+    &__linkBlog {}
+}
