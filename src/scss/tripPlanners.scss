@@ -1,0 +1,27 @@
+@import 'variables';
+@import 'helpers';
+
+.tripPlanners {}
+
+.titleTrip {}
+
+.leadTrip {
+    &__hdlTrip {}
+    &__textTrip {}
+}
+ .linkBtnTrip {}
+
+ .contentTrip {}
+
+ .containerTrip {}
+
+ .imgTrip {}
+
+ .hiddenText {
+     &__textTrip {}
+     &__hdlTrip {}
+     &__rankingTrip {}
+ }
+
+
+
