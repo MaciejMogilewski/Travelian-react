@@ -863,4 +863,56 @@ html, body {
   font-size: 16px;
 }
 
+.tripPlanners {
+  padding-top: 8.75rem;
+  padding-bottom: 8.75rem;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapperTrip {
+  display: flex;
+  align-items: center;
+  max-width: 97.25rem;
+  width: 100%;
+}
+
+.titleTrip {
+  margin-right: 4.25rem;
+}
+
+.leadTrip__hdlTrip {
+  color: #172432;
+  font-family: Playfair Display, serif;
+  font-size: 4rem;
+  font-weight: 400;
+  position: relative;
+  margin: 0;
+}
+.leadTrip__hdlTrip::after {
+  content: "";
+  position: absolute;
+  width: 14.4375rem;
+  height: 0.1875rem;
+  background-color: #FF7757;
+  display: block;
+  bottom: -1.25rem;
+}
+.leadTrip__textTrip {
+  margin-top: 3.25rem;
+  margin-bottom: 0;
+  color: #767E86;
+  font-family: Rubik, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.contentTrip {
+  display: flex;
+}
+
+.imgTrip {
+  margin-left: 2rem;
+}
+
 /*# sourceMappingURL=style.css.map */

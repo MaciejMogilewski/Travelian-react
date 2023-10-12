@@ -1,21 +1,64 @@
 @import 'variables';
 @import 'helpers';
 
-.tripPlanners {}
+.tripPlanners {
+    padding-top: toRem(140px);
+    padding-bottom: toRem(140px);
+    display: flex;
+    justify-content: center;
 
-.titleTrip {}
+}
+
+.wrapperTrip {
+    display: flex;
+    align-items: center;
+    max-width: toRem(1556px);
+    width: 100%;
+}
+
+.titleTrip {
+    margin-right: toRem(68px);
+}
 
 .leadTrip {
-    &__hdlTrip {}
-    &__textTrip {}
+    &__hdlTrip {
+        color: $input-font-color;
+        font-family: Playfair Display, serif;
+        font-size: toRem(64px);
+        font-weight: 400;
+        position: relative;
+        margin: 0;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: toRem(231px);
+            height: toRem(3px);
+            background-color: $primary-color;
+            display: block;
+            bottom: toRem(-20px);
+        }
+    }
+    &__textTrip {
+        margin-top: toRem(52px);
+        margin-bottom: 0;
+        color: $secondary-font-color;
+        font-family: Rubik, sans-serif;
+        font-size: toRem(18px);
+        font-weight: 400;
+    }
 }
  .linkBtnTrip {}
 
- .contentTrip {}
+ .contentTrip {
+     display: flex;
+ }
 
  .containerTrip {}
 
- .imgTrip {}
+ .imgTrip {
+     margin-left: toRem(32px);
+ }
 
  .hiddenText {
      &__textTrip {}
