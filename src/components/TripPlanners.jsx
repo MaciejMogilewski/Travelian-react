@@ -16,25 +16,25 @@ function TripPlanners() {
                         <img src="../../src/images/RomeTrip.jpg" alt="Obrazek"
                              className="containerTrip__imgTrip imgTrip"/>
                         <div className="containerTrip__hiddenText hiddenText">
-                            <p className="hiddenText__txtTrip"></p>
-                            <h3 className="hiddenText__hdlTrip"></h3>
-                            <div className="hiddenText__rankingTrip"></div>
+                            <p className="hiddenText__txtTrip hidden-text">dfs</p>
+                            <h3 className="hiddenText__hdlTrip hidden-text">sdfs</h3>
+                            <div className="hiddenText__rankingTrip hidden-text">sfsfd</div>
                         </div>
                     </div>
                     <div className="contentTrip__containerTrip containerTrip">
                         <img src="../../src/images/ParisTrip.jpg" alt="Obrazek" className="containerTrip__imgTrip imgTrip"/>
                         <div className="containerTrip__hiddenText hiddenText">
-                            <p className="hiddenText__txtTrip"></p>
-                            <h3 className="hiddenText__hdlTrip"></h3>
-                            <div className="hiddenText__rankingTrip"></div>
+                            <p className="hiddenText__txtTrip hidden-text">fg</p>
+                            <h3 className="hiddenText__hdlTrip hidden-text">fgd</h3>
+                            <div className="hiddenText__rankingTrip hidden-text">fdgf</div>
                         </div>
                     </div>
                     <div className="contentTrip__containerTrip containerTrip">
                         <img src="../../src/images/BerlinTrip.jpg" alt="Obrazek" className="containerTrip__imgTrip imgTrip"/>
                         <div className="containerTrip__hiddenText hiddenText">
-                            <p className="hiddenText__txtTrip"></p>
-                            <h3 className="hiddenText__hdlTrip"></h3>
-                            <div className="hiddenText__rankingTrip"></div>
+                            <p className="hiddenText__txtTrip hidden-text">sdfs</p>
+                            <h3 className="hiddenText__hdlTrip hidden-text">sdfs</h3>
+                            <div className="hiddenText__rankingTrip hidden-text">sdfs</div>
                         </div>
                     </div>
                 </div>

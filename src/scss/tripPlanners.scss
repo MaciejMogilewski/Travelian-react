@@ -39,6 +39,7 @@
             bottom: toRem(-20px);
         }
     }
+
     &__textTrip {
         margin-top: toRem(52px);
         margin-bottom: 0;
@@ -48,23 +49,90 @@
         font-weight: 400;
     }
 }
- .linkBtnTrip {}
 
- .contentTrip {
-     display: flex;
- }
+.linkBtnTrip {
+    height: toRem(61px);
+    width: toRem(186px);
+    background-color: $primary-color;
+    display: block;
+    color: $primary-font-color;
+    text-decoration: none;
+    padding: toRem(20px);
+    box-sizing: border-box;
+    font-family: Rubik, sans-serif;
+    font-size: toRem(18px);
+    font-weight: 400;
+    border-radius: toRem(12px);
+    position: relative;
+    left: toRem(40px);
+    bottom: toRem(-111px);
+    &::before {
+        content: '';
+        position: absolute;
+        width: toRem(43px);
+        height: toRem(43px);
+        background-color: black;
+        display: block;
+        left: toRem(-26px);
+        bottom: toRem(39px);
+        z-index: -10;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        width: toRem(43px);
+        height: toRem(43px);
+        background-color: $secondary-font-color;
+        display: block;
+        left: toRem(165px);
+        bottom: toRem(-20px);
+        z-index: -10;
+    }
+}
 
- .containerTrip {}
+.contentTrip {
+    display: flex;
 
- .imgTrip {
-     margin-left: toRem(32px);
- }
+}
 
- .hiddenText {
-     &__textTrip {}
-     &__hdlTrip {}
-     &__rankingTrip {}
- }
+.containerTrip {
+
+}
+
+.imgTrip {
+    margin-left: toRem(32px);
+    transition: transform 400ms ease;
+    &:hover {
+        transform: translateY(-60px);
+    };
+}
+
+.hiddenText {
+    text-align: center;
+    &__textTrip {
+    }
+
+    &__hdlTrip {
+    }
+
+    &__rankingTrip {
+    }
+}
+
+.hidden-text {
+    opacity: 0;
+    //transition: opacity 400ms ease;
+    transition-delay: 200ms;
+}
+
+.containerTrip:hover .hidden-text {
+    opacity: 1; /* Po najechaniu na .tripPlanners, pokaż elementy z opóźnieniem */
+}
+
+
+
+
+
 
 
 

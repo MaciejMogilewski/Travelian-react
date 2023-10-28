@@ -907,12 +907,68 @@ html, body {
   font-weight: 400;
 }
 
+.linkBtnTrip {
+  height: 3.8125rem;
+  width: 11.625rem;
+  background-color: #FF7757;
+  display: block;
+  color: #FFF;
+  text-decoration: none;
+  padding: 1.25rem;
+  box-sizing: border-box;
+  font-family: Rubik, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  border-radius: 0.75rem;
+  position: relative;
+  left: 2.5rem;
+  bottom: -6.9375rem;
+}
+.linkBtnTrip::before {
+  content: "";
+  position: absolute;
+  width: 2.6875rem;
+  height: 2.6875rem;
+  background-color: black;
+  display: block;
+  left: -1.625rem;
+  bottom: 2.4375rem;
+  z-index: -10;
+}
+.linkBtnTrip::after {
+  content: "";
+  position: absolute;
+  width: 2.6875rem;
+  height: 2.6875rem;
+  background-color: #767E86;
+  display: block;
+  left: 10.3125rem;
+  bottom: -1.25rem;
+  z-index: -10;
+}
+
 .contentTrip {
   display: flex;
 }
 
 .imgTrip {
   margin-left: 2rem;
+  transition: transform 400ms ease;
+}
+.imgTrip:hover {
+  transform: translateY(-60px);
+}
+
+.hiddenText {
+  text-align: center;
+}
+.hidden-text {
+  opacity: 0;
+  transition-delay: 200ms;
+}
+
+.containerTrip:hover .hidden-text {
+  opacity: 1; /* Po najechaniu na .tripPlanners, pokaż elementy z opóźnieniem */
 }
 
 /*# sourceMappingURL=style.css.map */
